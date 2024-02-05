@@ -21,6 +21,9 @@
     justify-content: center;
     align-items: center;
 }
+body{
+    font-family: "Cabin", sans-serif;
+}
 /*---------------------------
 REGOLE GENERALI first, third
 ---------------------------*/
@@ -38,17 +41,15 @@ REGOLE GENERALI first, third
     height: 500px;
     margin: 0 auto;
 }
-[class="lightblue-box"]
+[class="left-box"]
 {
     width: 60%;
     height: 100%;
-    background-color: cyan;
 }
-[class="pink-box"]
+[class="right-box"]
 {
     width: 40%;
     height: 100%;
-    background-color: palevioletred;
 }
 /*---------------------------
 REGOLE GENERALI second, fourth
@@ -71,9 +72,11 @@ REGOLE GENERALI second, fourth
 ---------------------------*/
 header
 {
-    background-color: #add8e6;
+    background-image: url(./img/jumbo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     padding-top: 10px;
-    height: 580px;
+    background-color: #3161e0;
 }
 .header-section
 {   
@@ -87,22 +90,19 @@ header
     padding-left: 5px;
     text-align: left;
     width: 25%;
-    background-color: orange;
     line-height: 50px;
 }
 .link-box
 {    
     width: 50%;
-    background-color: orange;
     line-height: 50px;
     text-align: center;
 }
 .login-box
-{
+{    
     padding-right: 5px;
     text-align: right;
     width: 25%;
-    background-color: orange;
     line-height: 50px;
 }
 /*---------------------------
@@ -111,15 +111,29 @@ header
 .hero-section
 {
     height: 500px;
-    background-color: darkblue; 
     margin-top: 10px;
 }
 .hero-box
 {
-    width: 900px;
+    max-width: 900px;
     height: 400px;
-    background-color: palevioletred;
+    color: white;
+    text-align: center;
+    font-size: larger;
+    font-size: 30px;
+
 }
+/*---------------------------
+
+---------------------------*/
+
+.first-section > .left-box
+{
+    background-image: url(./img/item1.svg);
+    background-repeat: no-repeat;
+}
+
+
 /*---------------------------
         FIRST GREY BG
 ---------------------------*/
@@ -127,8 +141,24 @@ header
 {
     width: 1180px;
     height: 500px;
-    margin: 0 auto;
+    margin: 0 auto;  
 }
+
+.second-section > .left-box
+{
+    background-image: url(./img/item2.svg);
+    background-repeat: no-repeat;
+}
+/*---------------------------
+    
+---------------------------*/
+
+.third-section > .left-box
+{
+    background-image: url(./img/item3.svg);
+    background-repeat: no-repeat;
+}
+
 /*---------------------------
         BIG GREEN
 ---------------------------*/
@@ -140,7 +170,8 @@ header
 {
     width: 1180px;
     height: 100%;
-    background-color: green;
+    background-image: url(./img/item4-big.svg);
+    background-repeat: no-repeat;
 }
 /*---------------------------
     FIFTH (FIRST FOOTER)
@@ -161,7 +192,7 @@ header
 {
     width: 30%;
     height: 100%;
-    background-color: palevioletred;
+
 }
 .fifth-right-box
 {
@@ -169,14 +200,11 @@ header
     justify-content: space-evenly;
     width: 70%;
     height: 100%;
-    background-color: aquamarine;
 }
 .fifth-right-box [class^="right"]     /* Vale per tutte le classi che iniziano */
 {                                       /* per "right" dentro "fifth-right-box" */
     width: calc(100% / 4);
     height: 100%;
-    background-color: aquamarine;
-    border: 3px dashed white;
 }
 /*---------------------------
             FOOTER
