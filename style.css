@@ -1,0 +1,205 @@
+/*---------------------------
+        RESET
+---------------------------*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*---------------------------
+        DEBUG
+---------------------------*/
+* [class$="-box"], .footer-section > [class], .fourth > [class]
+{  border: 3px dashed black; }
+/*---------------------------
+    REGOLE GENERALI
+---------------------------*/
+[class$="-section"], .footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*---------------------------
+REGOLE GENERALI first, third
+---------------------------*/
+[class="first"], [class="third"]
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 60px 0;
+}
+[class="first-section"], [class="third-section"]
+{
+    width: 1180px;
+    height: 500px;
+    margin: 0 auto;
+}
+[class="lightblue-box"]
+{
+    width: 60%;
+    height: 100%;
+    background-color: cyan;
+}
+[class="pink-box"]
+{
+    width: 40%;
+    height: 100%;
+    background-color: palevioletred;
+}
+/*---------------------------
+REGOLE GENERALI second, fourth
+---------------------------*/
+
+[class="second"], [class="fourth"]
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    padding: 60px 0;
+}
+/*---------------------------
+        HEADER + HERO
+---------------------------*/
+
+/*---------------------------
+        HEADER
+---------------------------*/
+header
+{
+    background-color: #add8e6;
+    padding-top: 10px;
+    height: 580px;
+}
+.header-section
+{   
+    justify-content: space-around;
+    width: 1180px;
+    height: 50px;
+    margin: 0 auto;
+}
+.logo-box
+{
+    padding-left: 5px;
+    text-align: left;
+    width: 25%;
+    background-color: orange;
+    line-height: 50px;
+}
+.link-box
+{    
+    width: 50%;
+    background-color: orange;
+    line-height: 50px;
+    text-align: center;
+}
+.login-box
+{
+    padding-right: 5px;
+    text-align: right;
+    width: 25%;
+    background-color: orange;
+    line-height: 50px;
+}
+/*---------------------------
+            HERO
+---------------------------*/
+.hero-section
+{
+    height: 500px;
+    background-color: darkblue; 
+    margin-top: 10px;
+}
+.hero-box
+{
+    width: 900px;
+    height: 400px;
+    background-color: palevioletred;
+}
+/*---------------------------
+        FIRST GREY BG
+---------------------------*/
+.second-section
+{
+    width: 1180px;
+    height: 500px;
+    margin: 0 auto;
+}
+/*---------------------------
+        BIG GREEN
+---------------------------*/
+.fourth
+{
+    height: 1000px;
+}
+.fourth-section
+{
+    width: 1180px;
+    height: 100%;
+    background-color: green;
+}
+/*---------------------------
+    FIFTH (FIRST FOOTER)
+---------------------------*/
+.fifth
+{
+    background-color: darkslategray;
+    height: 630px;
+    padding: 30px 0 60px;
+}
+.fifth-section
+{
+    width: 1180px;
+    height: 580px;
+    margin: 0 auto;
+}
+.fifth-left-box
+{
+    width: 30%;
+    height: 100%;
+    background-color: palevioletred;
+}
+.fifth-right-box
+{
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    height: 100%;
+    background-color: aquamarine;
+}
+.fifth-right-box [class^="right"]     /* Vale per tutte le classi che iniziano */
+{                                       /* per "right" dentro "fifth-right-box" */
+    width: calc(100% / 4);
+    height: 100%;
+    background-color: aquamarine;
+    border: 3px dashed white;
+}
+/*---------------------------
+            FOOTER
+---------------------------*/
+.footer
+{
+    background-color: darkslategray;
+    padding-top: 60px;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
+.footer-section
+{
+    justify-content: space-between;
+    width: 1180px;
+    background-color: aqua;
+    height: 70px;
+}
+.footer-section > [class]
+{
+    height: 40px;
+    background-color: blanchedalmond;
+    line-height: 40px;
+    text-align: center;
+    padding: 5px;
+}
