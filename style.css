@@ -11,7 +11,7 @@
         DEBUG
 ---------------------------*/
 * [class$="-box"], .footer-section > [class], .fourth > [class]
-{  border: 3px dashed black; }
+{borde: 3px dashed black;}
 /*---------------------------
     REGOLE GENERALI
 ---------------------------*/
@@ -21,8 +21,30 @@
     justify-content: center;
     align-items: center;
 }
-body{
+body
+{
     font-family: "Cabin", sans-serif;
+}
+p
+{
+    font-size: 20px;
+    text-align: left;
+}
+h1
+{
+    font-size: 58px;
+    text-align: left;
+}
+a
+{
+    text-decoration: none;
+}
+button
+{
+    border-radius: 30px;
+    padding: 15px 40px;
+    text-align: center;
+    font-size: 20px;
 }
 /*---------------------------
 REGOLE GENERALI first, third
@@ -41,20 +63,20 @@ REGOLE GENERALI first, third
     height: 500px;
     margin: 0 auto;
 }
-[class="left-box"]
+[class="lightblue-box"]
 {
     width: 60%;
     height: 100%;
 }
-[class="right-box"]
+[class="pink-box"]
 {
     width: 40%;
     height: 100%;
+    padding: 10px;
 }
 /*---------------------------
 REGOLE GENERALI second, fourth
 ---------------------------*/
-
 [class="second"], [class="fourth"]
 {
     display: flex;
@@ -73,37 +95,33 @@ REGOLE GENERALI second, fourth
 header
 {
     background-image: url(./img/jumbo.png);
+    background-position: top;
     background-size: contain;
     background-repeat: no-repeat;
+    background-color: #3e6eee;
     padding-top: 10px;
-    background-color: #3161e0;
 }
 .header-section
 {   
     justify-content: space-around;
     width: 1180px;
-    height: 50px;
     margin: 0 auto;
 }
 .logo-box
 {
-    padding-left: 5px;
-    text-align: left;
-    width: 25%;
-    line-height: 50px;
+    background-color: transparent;
 }
 .link-box
-{    
+{   
     width: 50%;
     line-height: 50px;
     text-align: center;
+    background-color: transparent;
 }
 .login-box
-{    
-    padding-right: 5px;
-    text-align: right;
-    width: 25%;
-    line-height: 50px;
+{
+    background-color: white;
+    color: darkslategray;
 }
 /*---------------------------
             HERO
@@ -111,29 +129,55 @@ header
 .hero-section
 {
     height: 500px;
-    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
 }
 .hero-box
 {
-    max-width: 900px;
-    height: 400px;
-    color: white;
+    width: 900px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.hero-box p, .hero-box h1
+{   
     text-align: center;
-    font-size: larger;
-    font-size: 30px;
-
+    color: white;
+}
+.bottoni-hero
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 900px;
+}
+.mac
+{
+    background-color: white;
+    color: darkslategray;
+}
+.browser
+{
+    background-color: darkslategray;
+    color: white;
 }
 /*---------------------------
-
+       FIRST WHITE BG     
 ---------------------------*/
-
-.first-section > .left-box
+.first-section > .lightblue-box
 {
     background-image: url(./img/item1.svg);
     background-repeat: no-repeat;
+    background-position: center;
 }
-
-
+.pink-box, .lightblue-box
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 /*---------------------------
         FIRST GREY BG
 ---------------------------*/
@@ -141,24 +185,23 @@ header
 {
     width: 1180px;
     height: 500px;
-    margin: 0 auto;  
+    margin: 0 auto;
 }
-
-.second-section > .left-box
+.second-section > .lightblue-box
 {
     background-image: url(./img/item2.svg);
     background-repeat: no-repeat;
+    background-position: center;
 }
 /*---------------------------
-    
+     SECOND WHITE BG       
 ---------------------------*/
-
-.third-section > .left-box
+.third-section > .lightblue-box
 {
     background-image: url(./img/item3.svg);
     background-repeat: no-repeat;
+    background-position: center;
 }
-
 /*---------------------------
         BIG GREEN
 ---------------------------*/
@@ -168,17 +211,36 @@ header
 }
 .fourth-section
 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 1180px;
     height: 100%;
+    padding: 30px;  
+}
+.testo
+{
+    align-items: flex-start;
+    text-align: center;
+}
+.testo-button
+{
+    background-image: url(./img/stars.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.fourth-section
+{
     background-image: url(./img/item4-big.svg);
     background-repeat: no-repeat;
+    background-position: center;
 }
 /*---------------------------
     FIFTH (FIRST FOOTER)
 ---------------------------*/
 .fifth
 {
-    background-color: darkslategray;
+    background-color: #23272a;
     height: 630px;
     padding: 30px 0 60px;
 }
@@ -192,7 +254,6 @@ header
 {
     width: 30%;
     height: 100%;
-
 }
 .fifth-right-box
 {
@@ -205,13 +266,23 @@ header
 {                                       /* per "right" dentro "fifth-right-box" */
     width: calc(100% / 4);
     height: 100%;
+    border: 3px dashed white;
+}
+.fifth-right-box ul
+{
+    list-style: none;
+    color: white;
+}
+.viola
+{
+   color: #7289da; 
 }
 /*---------------------------
             FOOTER
 ---------------------------*/
 .footer
 {
-    background-color: darkslategray;
+    background-color: #23272a;
     padding-top: 60px;
     border-top: 3px solid white;
     border-bottom: 3px solid white;
@@ -220,7 +291,6 @@ header
 {
     justify-content: space-between;
     width: 1180px;
-    background-color: aqua;
     height: 70px;
 }
 .footer-section > [class]
